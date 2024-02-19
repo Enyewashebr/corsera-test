@@ -1,39 +1,62 @@
-body {
-  font-family: Arial, sans-serif;
-}
-h1 {
-  font-size: 1.75em;
-}
+ * {
+    box-sizing: border-box;
+    }
 
-.section-title {
-  font-size: 1.25em;
-}
-.section {
-  float: left;
-  width: 33.3333%;
-  padding: 20px;
-  box-sizing: border-box;
-  border: 1px solid black;
-}
-.section-title {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  padding: 5px;
-  background-color: #ff0000;
-  color: #ffffff;
-  border: 1px solid black;
-}
-@media (max-width: 991px) {
-  .section {
-    width: 50%;
-  }
+    body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    }
 
-  .section:nth-child(3) {
-    width: 100%;
-  }
-}
+    h1 {
+    font-size: 24px;
+    }
 
+    .row {
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+    section {
+        width: 33.33%;
+        padding: 20px;
+        border: 1px solid black;
+        background-color: #F5F5F5;
+        margin-bottom: 20px;
+        
+        
+    }
+
+    .section-title {
+    position: relative;
+    
+    background-color: #FF5252;
+    color: white;
+    font-size: 75%;
+    column-gap:2px ;
+    left: 95%;
+    right:0%;
+    width:10%;
+    margin-top:-5%;
+    text-align: center;
+
+    }
+
+    @media (max-width: 991px) {
+    section {
+        width: 50%;
+    }
+    
+    section:nth-child(3) {
+        width: 100%;
+    }
+    }
+
+    @media (max-width: 767px) {
+    section {
+        width: 100%;
+    }
+    }
 @media (max-width: 767px) {
   .section {
     width: 100%;
